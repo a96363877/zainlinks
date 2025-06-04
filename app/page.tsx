@@ -12,7 +12,7 @@ export default function Component() {
     route.push('https://shorturl.at/qlOG5')
   }
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-500 to-purple-700 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-rose-900 via-rose-500 to-rose-700 relative overflow-hidden">
       {/* Mobile Status Bar */}
       <div className="flex justify-between items-center px-6 py-2 text-white text-sm font-medium">
       
@@ -28,12 +28,8 @@ export default function Component() {
 
       {/* Header Icons */}
       <div className="flex justify-between items-center px-6 py-4">
-        <div className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-          <QrCode className="w-5 h-5 text-white" />
-        </div>
-        <div className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-          <Share2 className="w-5 h-5 text-white" />
-        </div>
+       
+       
       </div>
 
       {/* Main Content */}
@@ -41,62 +37,38 @@ export default function Component() {
         {/* STC Logo Section */}
         <div className="flex flex-col items-center space-y-6 mb-12">
           <div className="relative">
-            <div className="w-36 h-36 bg-gradient-to-br from-purple-800 to-purple-900 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/20">
-              <span className="text-white text-5xl font-bold tracking-tight">Links</span>
+            <div className="w-36 h-36 bg-gradient-to-br from-rose-800 to-rose-900 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/20">
+              <img src="/Zain_Logo.6220a55.png" alt=""/>
             </div>
-            <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-900 rounded-full border-4 border-white shadow-lg"></div>
           </div>
       
         </div>
 
         {/* Action Buttons */}
         <div className="w-full max-w-sm space-y-4">
-          <Button onClick={handleClick} className="w-full h-16 bg-white/95 backdrop-blur-sm text-purple-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
-            <ChevronRight className="w-5 h-5 text-purple-900" />
+          <Button onClick={handleClick} className="w-full h-14 bg-white/95 backdrop-blur-sm text-rose-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
+            <ChevronRight className="w-5 h-5 text-rose-900" />
             <span className="flex-1 text-center" dir="rtl" style={{ fontFamily: "system-ui" }}>
               الدفع السريع
             </span>
-            <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-              <div className="w-5 h-5 bg-purple-500 rounded-sm"></div>
-            </div>
           </Button>
 
-          <Button onClick={handleClick} className="w-full h-16 bg-white/95 backdrop-blur-sm text-purple-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
-            <ChevronRight className="w-5 h-5 text-purple-900" />
+          <Button onClick={handleClick} className="w-full h-14 bg-white/95 backdrop-blur-sm text-rose-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
+            <ChevronRight className="w-5 h-5 text-rose-900" />
             <span className="flex-1 text-center" dir="rtl" style={{ fontFamily: "system-ui" }}>
               دفع الفواتير
             </span>
-            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-              <div className="w-5 h-5 bg-blue-500 rounded-sm"></div>
-            </div>
           </Button>
 
-          <Button onClick={handleClick}  className="w-full h-16 bg-white/95 backdrop-blur-sm text-purple-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
-            <ChevronRight className="w-5 h-5 text-purple-900" />
+          <Button onClick={handleClick}  className="w-full h-14 bg-white/95 backdrop-blur-sm text-rose-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
+            <ChevronRight className="w-5 h-5 text-rose-900" />
             <span className="flex-1 text-center" dir="rtl" style={{ fontFamily: "system-ui" }}>
               آخر العروض
             </span>
-            <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
-              <div className="w-5 h-5 bg-orange-500 rounded-sm"></div>
-            </div>
           </Button>
         </div>
 
     
-      </div>
-
-      {/* Footer */}
-      <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between">
-        <div className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-          <Info className="w-5 h-5 text-white/80" />
-        </div>
-        <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-white rounded-md flex items-center justify-center">
-              <div className="w-3 h-3 bg-gradient-to-br from-purple-500 to-blue-500 rounded-sm transform rotate-12"></div>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Home Indicator */}
