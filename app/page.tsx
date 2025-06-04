@@ -104,18 +104,24 @@ export default function Component() {
         repeatType: "loop",
         ease: "easeInOut",
       }}
-    >
+    > 
+     <motion.h3 className="text-xl font-semibold text-slate-800 mb-4 text-center mt-4" variants={itemVariants}>
+    الخدمات الرئيسية
+  </motion.h3>
+
       {/* Mobile Status Bar */}
-      <div className="flex justify-between items-center px-6 py-2 text-white text-sm font-medium"></div>
+      <div className="flex justify-between items-center px-4 py-2 text-white text-sm font-medium"></div>
 
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <motion.div
-          className="absolute top-20 left-10 w-32 h-32 border border-white/20 rounded-full"
+          className="absolute top-15 left-10 w-32 h-32 border border-white/20 rounded-full"
           initial="initial"
           animate="animate"
           variants={floatingAnimation as any}
-        ></motion.div>
+        >
+          
+        </motion.div>
         <motion.div
           className="absolute top-40 right-8 w-24 h-24 border border-white/20 rounded-full"
           initial="initial"
@@ -139,7 +145,9 @@ export default function Component() {
               transition: { ...floatingAnimation.animate.transition, delay: 1 }as any,
             },
           }}
-        ></motion.div>
+        >
+          
+        </motion.div>
       </div>
 
       {/* Animated Background Overlay */}
@@ -244,10 +252,7 @@ export default function Component() {
 
         {/* Main Action Buttons */}
         <motion.div className="w-full max-w-sm space-y-3" variants={itemVariants}>
-          <motion.h3 className="text-lg font-semibold text-slate-800 mb-4 text-right" variants={itemVariants}>
-            الخدمات الرئيسية
-          </motion.h3>
-
+        
           {/* Enhanced Animated Buttons */}
           <motion.div
             className="w-full space-y-5"
