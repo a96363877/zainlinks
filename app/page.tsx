@@ -44,7 +44,7 @@ export default function Component() {
         <div className="flex flex-col items-center space-y-6 mb-12">
           <div className="relative">
             <div className="w-36 h-36 bg-gradient-to-br from-purple-800 to-purple-900 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/20">
-              <span className="text-white text-5xl font-bold tracking-tight">Zain App</span>
+              <span className="text-white text-5xl font-bold tracking-tight">Links</span>
             </div>
             <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-900 rounded-full border-4 border-white shadow-lg"></div>
           </div>
@@ -97,7 +97,6 @@ export default function Component() {
             <div className="w-6 h-6 bg-white rounded-md flex items-center justify-center">
               <div className="w-3 h-3 bg-gradient-to-br from-purple-500 to-blue-500 rounded-sm transform rotate-12"></div>
             </div>
-            <span className="text-white font-medium text-sm">HeyLink.me</span>
           </div>
         </div>
       </div>
