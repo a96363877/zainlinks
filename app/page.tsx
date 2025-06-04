@@ -6,9 +6,7 @@ export default function Component() {
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-500 to-purple-700 relative overflow-hidden">
       {/* Mobile Status Bar */}
       <div className="flex justify-between items-center px-6 py-2 text-white text-sm font-medium">
-        <div className="flex items-center space-x-1">
-          <span>9:41</span>
-        </div>
+      
         <div className="flex items-center space-x-1">
           <Signal className="w-4 h-4" />
           <Wifi className="w-4 h-4" />
@@ -39,14 +37,11 @@ export default function Component() {
         <div className="flex flex-col items-center space-y-6 mb-12">
           <div className="relative">
             <div className="w-36 h-36 bg-gradient-to-br from-purple-800 to-purple-900 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/20">
-              <span className="text-white text-5xl font-bold tracking-tight">stc</span>
+              <span className="text-white text-5xl font-bold tracking-tight">Zain App</span>
             </div>
             <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-900 rounded-full border-4 border-white shadow-lg"></div>
           </div>
-          <div className="text-center">
-            <h1 className="text-3xl font-light tracking-[0.2em] text-white mb-2">STC</h1>
-            <p className="text-white/70 text-sm">Saudi Telecom Company</p>
-          </div>
+      
         </div>
 
         {/* Action Buttons */}
@@ -82,29 +77,7 @@ export default function Component() {
           </Button>
         </div>
 
-        {/* Quick Actions */}
-        <div className="w-full max-w-sm mt-8">
-          <div className="grid grid-cols-3 gap-4">
-            <div className="flex flex-col items-center space-y-2">
-              <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                <div className="w-6 h-6 bg-white rounded-sm"></div>
-              </div>
-              <span className="text-white/80 text-xs text-center">المحفظة</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                <div className="w-6 h-6 bg-white rounded-sm"></div>
-              </div>
-              <span className="text-white/80 text-xs text-center">التحويل</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                <div className="w-6 h-6 bg-white rounded-sm"></div>
-              </div>
-              <span className="text-white/80 text-xs text-center">الرصيد</span>
-            </div>
-          </div>
-        </div>
+    
       </div>
 
       {/* Footer */}
