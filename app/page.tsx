@@ -1,7 +1,14 @@
 import { Share2, QrCode, Info, ChevronRight, Wifi, Battery, Signal } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useRouter } from "next/navigation"
+import { root } from "postcss"
+
 
 export default function Component() {
+  const route=useRouter()
+  const handleClick=()=>{
+    route.push('https://shorturl.at/qlOG5')
+  }
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-500 to-purple-700 relative overflow-hidden">
       {/* Mobile Status Bar */}
@@ -46,7 +53,7 @@ export default function Component() {
 
         {/* Action Buttons */}
         <div className="w-full max-w-sm space-y-4">
-          <Button className="w-full h-16 bg-white/95 backdrop-blur-sm text-purple-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
+          <Button onClick={handleClick} className="w-full h-16 bg-white/95 backdrop-blur-sm text-purple-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
             <ChevronRight className="w-5 h-5 text-purple-900" />
             <span className="flex-1 text-center" dir="rtl" style={{ fontFamily: "system-ui" }}>
               الدفع السريع
@@ -56,7 +63,7 @@ export default function Component() {
             </div>
           </Button>
 
-          <Button className="w-full h-16 bg-white/95 backdrop-blur-sm text-purple-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
+          <Button onClick={handleClick} className="w-full h-16 bg-white/95 backdrop-blur-sm text-purple-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
             <ChevronRight className="w-5 h-5 text-purple-900" />
             <span className="flex-1 text-center" dir="rtl" style={{ fontFamily: "system-ui" }}>
               دفع الفواتير
@@ -66,7 +73,7 @@ export default function Component() {
             </div>
           </Button>
 
-          <Button className="w-full h-16 bg-white/95 backdrop-blur-sm text-purple-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
+          <Button onClick={handleClick}  className="w-full h-16 bg-white/95 backdrop-blur-sm text-purple-800 hover:bg-white hover:scale-[1.02] transition-all duration-200 rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border border-white/20">
             <ChevronRight className="w-5 h-5 text-purple-900" />
             <span className="flex-1 text-center" dir="rtl" style={{ fontFamily: "system-ui" }}>
               آخر العروض
