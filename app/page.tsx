@@ -37,7 +37,7 @@ export default function Component() {
         {/* STC Logo Section */}
         <div className="flex flex-col items-center space-y-6 mb-12">
           <div className="relative">
-            <div className="w-36 h-36 bg-gradient-to-br from-white to-white rounded-full flex items-center justify-center shadow-2xl border-4 border-white/20">
+            <div className="w-36 h-36 bg-gradient-to-br from-rose-800 to-rose-500 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/20">
               <img src="/Zain_Logo.6220a55.png" alt=""/>
             </div>
           </div>
