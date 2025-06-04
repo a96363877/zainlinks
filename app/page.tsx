@@ -105,9 +105,6 @@ export default function Component() {
         ease: "easeInOut",
       }}
     > 
-     <motion.h3 className="text-xl font-semibold text-slate-800 mb-4 text-center mt-4" variants={itemVariants}>
-    الخدمات الرئيسية
-  </motion.h3>
 
       {/* Mobile Status Bar */}
       <div className="flex justify-between items-center px-4 py-2 text-white text-sm font-medium"></div>
