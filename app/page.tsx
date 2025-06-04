@@ -72,7 +72,7 @@ export default function Component() {
     },
   }
 
-  const buttonPulseAnimation = (color: string) => ({
+  const buttonPulseAnimation = (color:string) => ({
     initial: {},
     animate: {
       boxShadow: [`0 0 0 0 rgba(${color}, 0)`, `0 0 0 10px rgba(${color}, 0.2)`, `0 0 0 20px rgba(${color}, 0.0)`],
@@ -271,11 +271,11 @@ export default function Component() {
             >
               <motion.button
                 onClick={handleClick}
-                className="w-full h-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border-0 relative overflow-hidden"
+                className="w-full h-16 bg-gradient-to-r from-blue-600/50 to-blue-700/80 text-white rounded-2xl text-lg font-semibold flex items-center justify-between px-6 shadow-lg border-0 relative overflow-hidden"
                 whileHover={{
                   scale: 1.03,
                   boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.6)",
-                  transition: { duration: 0.2 },
+                  transition: { duration: 1.2 },
                 }}
                 whileTap={{
                   scale: 0.97,
@@ -284,13 +284,13 @@ export default function Component() {
                 initial={{ boxShadow: "0 4px 12px -2px rgba(59, 130, 246, 0.3)" }}
               >
                 <motion.span
-                  className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600"
+                  className="absolute inset-0 bg-gradient-to-r from-blue-50 to-blue-50"
                   initial={{ x: "100%" }}
                   whileHover={{ x: 0 }}
                   transition={{ duration: 0.4 }}
                 />
                 <motion.div className="absolute inset-0 flex items-center justify-between px-6" style={{ zIndex: 10 }}>
-                  <motion.div initial={{ x: 0 }} whileHover={{ x: -5 }} transition={{ duration: 0.2 }}>
+                  <motion.div initial={{ x: 0 }} whileHover={{ x: -5 }} transition={{ duration: 1.2 }}>
                     <ChevronRight className="w-5 h-5" />
                   </motion.div>
                   <span className="flex-1 text-center" dir="rtl">
